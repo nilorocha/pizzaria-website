@@ -1,0 +1,336 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Pizza</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Myriad Pro';
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .banner {
+            width: 1364px;
+            height: 500px;
+            background: url('');
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .banner img {
+            margin: 0 auto;
+            display: block;
+            transform: translateY(-80px);
+        }
+
+        .borda {
+            border-style: solid;
+            border-width: 1px;
+        }
+
+        .conteudo {
+            height: auto;
+            width: 1364px;
+            margin: auto;
+            padding: 30px 8px 8px 8px;
+            text-align: center;
+        }
+
+        .endereco {
+            background-color: #BC1700;
+            font-size: 35px;
+            height: 65px;
+            padding: 15px 15px 0px 15px;
+            text-align: left;
+            color: white;
+            width: 1364;
+        }
+
+
+        .titulo {
+            text-align: center;
+            color: red;
+            font-size: 60px;
+            -webkit-text-stroke-width: 1px;
+            /* largura da borda */
+            -webkit-text-stroke-color: #000;
+            /* cor da borda */
+        }
+
+        .topo {
+            width: 1364px;
+            height: auto;
+            background-color: #056E47;
+            padding-top: 8px;
+            margin: 0 auto;
+
+        }
+
+        .sobre {
+            padding: 1px 15px 1px 1px;
+            text-align: right;
+        }
+
+
+        /*Estilização do menu NAV*/
+
+        .menu {
+            background-color: #006633;
+            height: 92px;
+            margin: auto;
+            padding: 28px;
+            width: 1364px;
+
+        }
+
+        .menu ul {
+            list-style-type: none;
+        }
+
+        .menu li {
+            display: inline;
+            margin: 0px 50px 0px 50px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            padding: 28px 34px 28px 34px;
+            ;
+            /*espaçamento interno*/
+            font-size: 28px;
+            transition: background-color 0.8s, box-shadow 0.3s;
+            text-align: center;
+
+        }
+
+        .menu a:hover {
+            background-color: orange;
+            box-shadow: 0px 3px 10px #999;
+        }
+
+
+        /* CARDAPIO*/
+
+        #cardapioPizza {
+
+            width: 1260px;
+            margin: 50px auto;
+        }
+
+        .cardapio-pizza-item {
+            margin-top: 30px;
+        }
+
+        .cardapio-pizza-item h3 {
+            text-align: left;
+        }
+
+        .cardapio-imagem {
+
+            display: inline-block;
+
+            height: 340px;
+            width: 460px;
+        }
+
+        .cardapio-imagem img {
+            width: 460px;
+            height: 340px;
+        }
+
+        .cardapio-ingredientes {
+            display: inline-block;
+
+            font-size: 26px;
+            height: 340px;
+            margin-left: -4px;
+            padding: 15px 0px 15px 20px;
+            text-align: left;
+            width: 788px;
+            vertical-align: top;
+
+        }
+
+        .subtitulo {
+            font-size: 40px;
+
+            text-align: left;
+        }
+
+        .preco {
+            background: #BC1700;
+            height: 71px;
+            padding-top: 10px;
+            text-align: center;
+            width: 544px;
+
+
+            position: relative;
+            left: 29.2%;
+            top: 19%;
+        }
+
+        .preco a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            /*espaçamento interno*/
+            font-size: 40px;
+        }
+
+        .preco a:hover {
+            color: blue;
+        }
+
+        .pe{
+            font-size: 40px;
+            
+
+        }
+
+        .pe a{
+            text-decoration: none;
+            color:red;
+            -webkit-text-stroke-width: 0.8px; /* largura da borda */
+            -webkit-text-stroke-color: #000; /* cor da borda */
+        }
+        .pe a:hover{
+            color:blue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="topo">
+
+        <div class="sobre">
+            <a href="#">
+                <img src="imagens/social.png" alt="Icones das redes sociais">
+            </a>
+        </div>
+        <div class="banner">
+            <img src="imagens/logo.png" alt "Logotipo da pizzaria">
+
+        </div>
+
+        <nav class="menu borda">
+            <ul>
+                <li>
+                    <a href="Pizza1.html">HOME</a>
+                </li>
+                <li>
+                    <a href="#">CARDÁPIO</a>
+                </li>
+                <li>
+                    <a href="#">QUEM SOMOS</a>
+                </li>
+                <li>
+                    <a href="#">FALE CONOSCO</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="endereco">
+            <p>Endereço: Rua Dênis de Lima, 28 - Perus - São Paulo - SP &emsp;&emsp; Telefone: (11) 99999-99999</p>
+
+
+        </div>
+    </header>
+
+
+    <div class="conteudo borda">
+        <main>
+
+            <h2 class="titulo">Destaque</h2>
+
+
+            <div id="cardapioPizza">
+                <!--Cardapio linha do cardapio-->
+
+                <div class="cardapio-pizza-item">
+
+                    <div class="cardapio-imagem">
+                        <img src="imagens/pizza1.png" alt="Pizza Calabresa">
+                    </div>
+                    <!--Imagem Bloco-->
+                    <div class="cardapio-ingredientes borda">
+                        <h3 class="subtitulo">Calabresa</h3>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio magni sint nesciunt voluptatibus
+                            perferendis ullam beatae ad voluptas in natus adipisci iusto incidunt tenetur minus recusandae
+                            soluta, quod officia? Voluptates?</p>
+
+
+                        <div class="preco borda">
+                            <p>
+                                <a href="#">Peça aqui por R$19,00 </a>
+                            </p>
+
+                        </div>
+                    </div>
+                    <!--Fim do  Bloco Pizza 1-->
+
+                    <div class="cardapio-pizza-item">
+
+                        <div class="cardapio-imagem">
+                            <img src="imagens/pizza1.png" alt="Pizza Calabresa">
+                        </div>
+                        <!--Imagem Bloco-->
+                        <div class="cardapio-ingredientes borda">
+                            <h3 class="subtitulo">Calabresa</h3>
+                            <br>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aut obcaecati error?
+                                Porro, nam est. Necessitatibus tenetur rem provident explicabo voluptatum, veritatis ab iure
+                                eos reiciendis eveniet repudiandae vero culpa.</p>
+                            <div class="preco borda">
+                                <p>
+                                    <a href="#">Peça aqui por R$19,00 </a>
+                                </p>
+                            </div>
+                        </div>
+                        <!--Fim do  Bloco Pizza2-->
+
+                        <div class="cardapio-pizza-item">
+
+                            <div class="cardapio-imagem">
+                                <img src="imagens/pizza1.png" alt="Pizza Calabresa">
+                            </div>
+                            <!--Imagem Bloco-->
+                            <div class="cardapio-ingredientes borda">
+                                <h3 class="subtitulo">Calabresa</h3>
+                                <br>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab ipsa, minus iusto vero unde
+                                    reiciendis esse illo vitae doloremque ipsum odio ratione excepturi eius exercitationem
+                                    obcaecati, amet nesciunt deleniti. Lorem ipsum dolor expedita recusandae .
+                                <div class="preco borda">
+                                    <p>
+                                        <a href="#">Peça aqui por R$19,00 </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Fim do  Bloco Pizza-->
+
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="pe">
+            <p>Para ver o cardapio completo,
+                <a href="#">CLIQUE AQUI</a>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
